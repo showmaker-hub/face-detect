@@ -88,7 +88,7 @@ async function changeFaceDetector(detector) {
 
   $('#loader').show()
   if (!isFaceDetectionModelLoaded()) {
-    await getCurrentFaceDetectionNet().loadFromUri('http://www.battlesoldier.top/resource/faceApi/weights')
+    await getCurrentFaceDetectionNet().loadFromUri('/models')
   }
 
   $(`#${detector}_controls`).show()
