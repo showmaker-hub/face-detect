@@ -95,7 +95,7 @@
     async function run() {
       // load face detection and face expression recognition models
       await changeFaceDetector(TINY_FACE_DETECTOR)
-      await faceapi.nets.ageGenderNet.loadFromUri('http://www.battlesoldier.top/resource/faceApi/weights')
+      await faceapi.nets.ageGenderNet.loadFromUri('/models')
       changeInputSize(224)
 
       // try to access users webcam and stream the images
